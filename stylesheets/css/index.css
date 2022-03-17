@@ -1,0 +1,143 @@
+@import "./section-donate.css";
+@import "./section-footer.css";
+@import "./section-header.css";
+@import "./section-our-mission.css";
+@import "./section-our-projects.css";
+@import "./section-your-participation-is-vital.css";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding-bottom: 36px;
+  padding-top: 36px;
+  -webkit-text-size-adjust: 100%;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.heading,
+.paragraph-heading {
+  color: #04203a;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+}
+
+.heading-1 {
+  font-size: 36px;
+  letter-spacing: 0.12px;
+  line-height: 1.18;
+}
+
+.heading-2 {
+  font-size: 24px;
+  letter-spacing: 0.26px;
+  line-height: 1;
+}
+
+.heading-3 {
+  font-size: 30px;
+  letter-spacing: 0.32px;
+  line-height: 1;
+}
+
+.image-responsive {
+  height: auto;
+  max-width: 100%;
+}
+
+.link_button {
+  align-items: center;
+  border-radius: 6px;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  font-family: "Open Sans", sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: bold;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.link_button-primary {
+  background-color: #1e90ff;
+}
+
+.link_button-secondary {
+  background-color: #ffbf00;
+}
+
+.paragraph {
+  color: #192633;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: normal;
+  letter-spacing: 0.24px;
+  line-height: 1.64;
+}
+
+.section {
+  margin: 0 auto;
+  max-width: 944px;
+}
+
+.header + .main {
+  margin-top: 22px;
+}
+
+.section-our-mission + .section-donate,
+.section-donate + .section-our-projects {
+  margin-top: 72px;
+}
+
+.section-our-projects + .section-your-participation-is-vital {
+  margin-top: 106px;
+}
+
+.main + .footer {
+  margin-top: 100px;
+}
+
+@media (max-width: 944px) {
+  body {
+    padding-bottom: 8px;
+    padding-top: 8px;
+  }
+
+  .heading-1 {
+    font-size: 26px;
+  }
+
+  .header,
+  .main,
+  .footer {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  .main + .footer {
+    margin-top: 80px;
+  }
+}
